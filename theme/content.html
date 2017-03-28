@@ -1,0 +1,15 @@
+{% if meta.source %}
+<div class="source-links">
+{% for filename in meta.source %}
+    <span class="label label-primary">{{ filename }}</span>
+{% endfor %}
+</div>
+{% endif %}
+
+{% if page_title == "Umbreo CLI" %}
+	{% set page_title = "Umbreo Command Line Interface" %}
+{% endif %}
+
+<h2> {{ page_title }}</h2>
+<br>
+{{ content }}
