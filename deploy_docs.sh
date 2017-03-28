@@ -1,5 +1,5 @@
 #!/bin/bash
 
 mkdocs build --clean
-mkdocs build --clean -d ../public/documentation/
+mkdocs build --clean -d ../generated_documentation/
 mkdocs serve

@@ -2,7 +2,7 @@ site_name: Umbreo Documentation
 site_description: Umbreo Documentation
 site_author: Umbreo
 copyright: © Umbreo 2016. All rights reserved.
-theme_dir: 'umbreo'
+theme_dir: 'theme'
 google_analytics: ['UA-48077124-1', 'auto']
 markdown_extensions:
   - smarty
@@ -15,8 +15,8 @@ markdown_extensions:
 extra:
   base_url: 'http://docs.umbreo.com'
 
-docs_dir: mdocs
-site_dir: documentation
+docs_dir: documentation
+site_dir: documentation_site
 
 pages:
 - Documentation: 'index.md'

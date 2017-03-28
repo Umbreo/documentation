@@ -10,6 +10,9 @@
 	{% set page_title = "Umbreo Command Line Interface" %}
 {% endif %}
 
-<h2> {{ page_title }}</h2>
+{% if page_title %}
+<h2>{{ page_title }}</h2>
 <br>
+{% endif %}
+
 {{ content }}
