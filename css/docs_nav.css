@@ -1,0 +1,59 @@
+.docs-nav {
+  /*padding-right: 0px !important;*/
+}
+
+.sidebar_nav .panel a.panel-head {
+  background-image: linear-gradient(#ffffff, #eef0f2);
+  padding: 0 11px;
+  position: relative;
+  line-height: 37px;
+  text-shadow: 0px 1px 0px #fff;
+  border: 0 none;
+  color: #202f38;
+  text-decoration: none;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display:block;
+  font-size: 13px;
+}
+
+ul.sidebar_nav.panel-group {
+  padding: 0px;
+}
+
+.sidebar_nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar_nav ul li {
+  list-style: none;
+  padding: 4px 20px;
+  line-height: 16px;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.sidebar_nav ul li:first-child {
+  padding-top: 12px;
+}
+
+.sidebar_nav ul li:last-child {
+  padding-bottom: 12px;
+}
+
+.sidebar_nav ul li a {
+  color: #27aac8;
+  font-weight: 200;
+  display: block;
+  padding: 3px 0;
+  text-decoration: none;
+}
+
+.sidebar_nav ul li a:hover {
+  color: #202f38;
+}

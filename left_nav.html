@@ -1,0 +1,66 @@
+<ul class="sidebar_nav panel-group">
+
+    <form role="form">
+        <div class="form-group">
+            <input type="text" class="form-control doc-input" placeholder="Search..." id="mkdocs-search-query">
+
+        </div>
+    </form>
+    <div id="mkdocs-search-results"></div>
+
+  {% set current_panel = "" %}
+
+  {% set _page_title = page_title|lower() %}
+
+  {% if _page_title in ["instances","blueprints","profiles", "modules", "stacks", "providers"] %}
+      {% set current_panel = "coreconcepts" %}
+
+  {% elif _page_title in ["release notes"] %}
+      {% set current_panel = "whatisnewatumbreo" %}
+
+  {% elif _page_title in ["creating instances", "configuring blueprints", "assigning blueprints", "confirming instances", "shared parameters", "scaled parameters"] %}
+      {% set current_panel = "deployingyourinstances" %}
+
+  {% elif _page_title in ["manually provisioned instances", "auto-provisioned instances", "umbreo online instances"] %}
+      {% set current_panel = "automatingdeployments" %}
+
+  {% elif _page_title in ["amazon web services", "google compute engine", "digital ocean", "openstack cloud", "xen server", "rackspace"] %}
+      {% set current_panel = "deployingintheclouds" %}
+
+  {% elif _page_title in ["ruby on rails deployment","django deployment","monitoring", "docker containers","logging","database replication"] %}
+      {% set current_panel = "services" %}
+
+  {% elif _page_title in ["launch your first instance", "quick tour", "glossary"] %}
+      {% set current_panel = "gettingstarted" %}
+
+  {% elif _page_title in ["umbreo endpoints", "umbreo cli", "community edition", "umbreo ce"] %}
+      {% set current_panel = "developers" %}
+
+  {% elif _page_title in ["faq"] %}
+      {% set current_panel = "otherlinks" %}
+
+  {% else %}
+      {% set current_panel = "gettingstarted" %}
+  {% endif %}
+
+  {% for nav_item in nav %}
+  {% if nav_item.children %}
+  {% set nav_title = nav_item.title|replace(" ", "")|lower() %}
+  <li class="panel panel-default">
+
+    <a href="#" onclick="return false;" data-toggle="collapse" data-parent="#docs-accordion" data-target="#{{nav_title}}" class="panel-head toggable">{{nav_item.title}}</a>
+
+    <ul id="{{nav_title}}" class="panel-collapse {{'in' if nav_title == current_panel else 'collapse' }}">
+      {% for nav_item in nav_item.children %}
+      <li class="{{'active' if nav_item.title == page_title }}">
+        <a href="{{nav_item.url}}" class="page_link">{{nav_item.title}}</a>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+  </li>
+  {% endif %}
+  {% endfor %}
+
+</ul>
