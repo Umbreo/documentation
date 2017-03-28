@@ -1,0 +1,65 @@
+site_name: Umbreo Documentation
+site_description: Umbreo Documentation
+site_author: Umbreo
+copyright: © Umbreo 2016. All rights reserved.
+theme_dir: 'umbreo'
+google_analytics: ['UA-48077124-1', 'auto']
+markdown_extensions:
+  - smarty
+  - headerid:
+      forceid: True
+      level: 2
+  - toc:
+      separator: "_"
+
+extra:
+  base_url: 'http://docs.umbreo.com'
+
+docs_dir: mdocs
+site_dir: documentation
+
+pages:
+- Documentation: 'index.md'
+# - What is New at Umbreo:
+#   - 'Release notes': 'release-notes.md'
+- Getting Started:
+  - 'Launch your first instance': 'getting-started/launch-first-instance.md'
+  - 'Glossary': 'getting-started/glossary.md'
+  # - 'Quick Tour': 'getting-started/quick-tour.md'
+- Core Concepts:
+  - 'Instances': 'core-concepts/instances.md'
+  - 'Blueprints': 'core-concepts/blueprints.md'
+  - 'Profiles': 'core-concepts/profiles.md'
+  - 'Modules': 'core-concepts/modules.md'
+  - 'Stacks': 'core-concepts/stacks.md'
+  - 'Providers': 'core-concepts/providers.md'
+- Automating Deployments:
+  - 'Manually Provisioned Instances': 'automating-deployments/manually-provisioned.md'
+  - 'Auto-Provisioned Instances': 'automating-deployments/auto-provisioned.md'
+  - 'Umbreo Online Instances': 'automating-deployments/test-instance.md'
+# - Deploying your instances:
+#   - 'Creating Instances': 'deploying-instances/creating-instances.md'
+#   - 'Configuring Blueprints': 'deploying-instances/configuring-blueprints.md'
+#   - 'Assigning Blueprints': 'deploying-instances/assigning-blueprints.md'
+#   - 'Confirming Instances': 'deploying-instances/confirming-instances.md'
+#   - 'Shared Parameters': 'deploying-instances/shared-parameters.md'
+#   - 'Scaled Parameters': 'deploying-instances/scaled-parameters.md'
+- Deploying in the clouds:
+  - 'Amazon Web Services': 'deploying-in-the-clouds/aws.md'
+  - 'Google Compute Engine': 'deploying-in-the-clouds/gcompute.md'
+  # - 'Digital Ocean': 'deploying-in-the-cloud/digital-ocean.md'
+  # - 'OpenStack Cloud': 'deploying-in-the-cloud/openstack.md'
+  # - 'Xen Server': 'deploying-in-the-cloud/xen.md'
+- Services:
+  - 'Monitoring': 'services/monitoring.md'
+  - 'Ruby on Rails Deployment': 'services/ror-deployment.md'
+  - 'Django Deployment': 'services/django-deployment.md'
+
+- Developers:
+  - 'Umbreo CLI': 'developers/cli.md'
+  - 'Umbreo CE': 'developers/community-edition.md'
+  - 'Umbreo Endpoints': 'developers/endpoints.md'
+  # - 'Logging': 'services/logging.md'
+  # - 'Docker Containers': 'features/docker-containers.md'
+- Other Links:
+  - 'Umbreo FAQ': 'faq.md'
