@@ -23,8 +23,9 @@ pages:
 # - What is New at Umbreo:
 #   - 'Release notes': 'release-notes.md'
 - Getting Started:
+  # - 'What is Umbreo': 'getting-started/what-is-umbreo.md'
   - 'Launch your first instance': 'getting-started/launch-first-instance.md'
-  - 'Glossary': 'getting-started/glossary.md'
+  # - 'Glossary': 'getting-started/glossary.md'
   # - 'Quick Tour': 'getting-started/quick-tour.md'
 - Core Concepts:
   - 'Instances': 'core-concepts/instances.md'
@@ -57,9 +58,9 @@ pages:
 
 - Developers:
   - 'Umbreo CLI': 'developers/cli.md'
-  - 'Umbreo CE': 'developers/community-edition.md'
   - 'Umbreo Endpoints': 'developers/endpoints.md'
+  # - 'Umbreo CE': 'developers/community-edition.md'
   # - 'Logging': 'services/logging.md'
   # - 'Docker Containers': 'features/docker-containers.md'
-- Other Links:
-  - 'Umbreo FAQ': 'faq.md'
+# - Other Links:
+#   - 'Umbreo FAQ': 'faq.md'

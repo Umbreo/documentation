@@ -1,11 +1,8 @@
-# List Umbreo Command CLI
-<br />
+<!-- # List Umbreo Command CLI -->
 ### We have 2 ways to call action command:
 
 * command-suite
 * command-form
-
-<br />
 
 ### Wiki Umbreo Command CLI
 
@@ -86,6 +83,7 @@ $ bundle install
 ```
 
 <br />
+-------------
 
 How to Run CLI
 ====================
@@ -106,6 +104,7 @@ Below are current lists command on CLI
 ====================
 
 <br />
+-------------
 
 ### 1. Endpoint Configuration
 
@@ -125,6 +124,7 @@ $ Enter your Endpoint (URL): https://beta.umbreo.com
 ```
 
 <br />
+-------------
 
 ### 2. Authentication
 
@@ -156,6 +156,7 @@ Local credentials cleared.
 ```
 
 <br />
+-------------------------
 
 ### 3. Instance
 

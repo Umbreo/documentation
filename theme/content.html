@@ -10,7 +10,7 @@
 	{% set page_title = "Umbreo Command Line Interface" %}
 {% endif %}
 
-{% if page_title %}
+{% if page_title and page_title != "What is Umbreo" %}
 <h2>{{ page_title }}</h2>
 <br>
 {% endif %}
